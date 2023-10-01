@@ -10,6 +10,7 @@
   - [EndsWith](#endswith)
   - [IndexOf](#indexof)
   - [Slice](#slice)
+  - [toLowerCase](#tolowercase)
     
  
 ### Number
@@ -147,6 +148,20 @@ console.log(browserType.slice(1, 4)); // Output will be "ozi"
 ```js
 If we want to remaining character from the certain character,we do  not have second parameter.We only need to inclued character position from where we want to extract.
 browserType.slice(2); // "zilla"
+```
+
+- #### toLowerCase
+In a string we can convert all charecter to lower if we can use `toLowerCase` string method.
+```js
+const radData = "My NaMe Is MuD";
+console.log(radData.toLowerCase());
+```
+
+- #### toUpperCase
+In a string we can convert all charecter to uppper if we can use `toUpperCase` string method.
+```js
+const radData = "My NaMe Is MuD";
+console.log(radData.toUpperCase());
 ```
 
 
