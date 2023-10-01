@@ -4,6 +4,9 @@
   - [Math 1](#math-1)
   - [Math 2](#math-2)
   - [Math 3](#math-3)
+- [String Methods](#string-methods)
+  - [Includes](#includes)
+  - 
  
 ### Number
 
@@ -66,3 +69,46 @@ const weightComparison = eleWeight < mouseWeight;
 const heightComparison = ostrichHeight > duckHeight;
 const pwdMatch = pwd1 === pwd2
 ```
+
+### String Methods
+
+- #### Includes
+If we want to find a substring in a string,we can use `includes` method. 
+
+ ```js
+const browserType = "mozilla";
+const searchedString = "zilla"
+
+if (browserType.includes(searchedString)) {
+  console.log("Found " + searchedString);
+} else {
+  console.log(`No ${searchedstring} here!`);
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
