@@ -115,12 +115,28 @@ if (browserType.endsWith("zilla")) {
 }
 ```
 
-- #### indexOf
-
+- #### IndexOf
+  `indexOf`method define the position of the substring in a string.
 ```js
 const tagline = "MDN - Resources for developers, by developers";
 console.log(tagline.indexOf("e")); //Output will be 7
 ```
+
+If there is no extitance position in a substring.
+```js
+const tagline = "MDN - Resources for developers, by developers";
+console.log(tagline.indexOf("x")); //Output will be -1
+```
+
+Finding the second parameter, we can do that by passing in a value that's greater than the index of the previous occurrence.
+```js
+const firstOccurrence = tagline.indexOf("developers");
+const secondOccurrence = tagline.indexOf("developers", firstOccurrence + 1);
+
+console.log(firstOccurrence); // Output will be 20
+console.log(secondOccurrence); // Output will be 35
+```
+
 
 
 
