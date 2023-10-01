@@ -6,8 +6,9 @@
   - [Math 3](#math-3)
 - [String Methods](#string-methods)
   - [Includes](#includes)
-  - [Startswith](#startswith)
-  - [Endswith](#endswith)
+  - [StartsWith](#startswith)
+  - [EndsWith](#endswith)
+  - [IndexOf](#indexof)
     
  
 ### Number
@@ -88,7 +89,7 @@ if (browserType.includes(searchedString)) {
 }
 ```
 
-- #### Startswith
+- #### StartsWith
 If we want to know a string starts with a substring,we can use `startswith`method.
 
 ```js
@@ -101,7 +102,7 @@ if (browserType.startsWith("zilla")) {
 }
 ```
 
-- #### Endswith
+- #### EndsWith
 Using `endswith`method we can know that a string ends with a substring.
 
 ```js
@@ -113,6 +114,14 @@ if (browserType.endsWith("zilla")) {
   console.log("No zilla here!");
 }
 ```
+
+- #### indexOf
+
+```js
+const tagline = "MDN - Resources for developers, by developers";
+console.log(tagline.indexOf("e")); //Output will be 7
+```
+
 
 
 
