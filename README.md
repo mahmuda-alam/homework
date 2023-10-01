@@ -10,7 +10,8 @@
   - [EndsWith](#endswith)
   - [IndexOf](#indexof)
   - [Slice](#slice)
-  - [toLowerCase](#tolowercase)
+  - [ToLowerCase](#tolowercase)
+  - [ToUpperCase](#touppercase)
   - [Replace](#replace)
   - [ReplaceAll](#replaceAll)
     
