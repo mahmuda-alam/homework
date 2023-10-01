@@ -116,19 +116,19 @@ if (browserType.endsWith("zilla")) {
 ```
 
 - #### IndexOf
-  `indexOf`method define the position of the substring in a string.
+`indexOf`method define the position of the substring in a string.
 ```js
 const tagline = "MDN - Resources for developers, by developers";
 console.log(tagline.indexOf("e")); //Output will be 7
 ```
 
-If there is no extitance position in a substring.
+If there is no existance in a substring then it will return `-1`.
 ```js
 const tagline = "MDN - Resources for developers, by developers";
 console.log(tagline.indexOf("x")); //Output will be -1
 ```
 
-Finding the second parameter, we can do that by passing in a value that's greater than the index of the previous occurrence.
+To find the second occurrence, we can pass a second parameter to this method that is greater than the index of the previous occurrence.
 ```js
 const firstOccurrence = tagline.indexOf("developers");
 const secondOccurrence = tagline.indexOf("developers", firstOccurrence + 1);
