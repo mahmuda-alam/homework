@@ -9,6 +9,7 @@
   - [StartsWith](#startswith)
   - [EndsWith](#endswith)
   - [IndexOf](#indexof)
+  - [Slice](#slice)
     
  
 ### Number
@@ -135,6 +136,17 @@ const secondOccurrence = tagline.indexOf("developers", firstOccurrence + 1);
 
 console.log(firstOccurrence); // Output will be 20
 console.log(secondOccurrence); // Output will be 35
+```
+
+- #### Slice
+You can extract a substring from a string using the `slice` method. It contain two parameter, start & end parameter.Start parameter is inclusive & end parameter is exclusive.
+```js
+const browserType = "mozilla";
+console.log(browserType.slice(1, 4)); // Output will be "ozi"
+ ```
+```js
+If we want to remaining character from the certain character,we do  not have second parameter.We only need to inclued character position from where we want to extract.
+browserType.slice(2); // "zilla"
 ```
 
 
