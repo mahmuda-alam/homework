@@ -11,6 +11,8 @@
   - [IndexOf](#indexof)
   - [Slice](#slice)
   - [toLowerCase](#tolowercase)
+  - [Replace](#replace)
+  - [ReplaceAll](#replaceAll)
     
  
 ### Number
@@ -164,31 +166,23 @@ const radData = "My NaMe Is MuD";
 console.log(radData.toUpperCase());
 ```
 
+- #### Replace
+To use `replace` string method , we can update string to replace substring in a string. There are two parameters- the string we want to replace and the string we want to replace it with. It will not change the original string rather than it will create a new string.
 
+```js
+const browserType = "mozilla";
+const updated = browserType.replace("moz", "van");
 
+console.log(updated); // "vanilla"
+console.log(browserType); // "mozilla"
+```
 
+- #### ReplaceAll
+`replaceAll` string method change all occurrence. It takes two parameter: first parameter that will be replaced and second parameter that will replace the string of first parameter. So the main difference `replace` & `replaceAll` is `replace` only replaces first occurrence and `replaceAll` replaces all occurrence of the string.
 
+```js
+let quote = "To be or not to be";
+quote = quote.replaceAll("be", "code");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(quote); // "To code or not to code"
+```
