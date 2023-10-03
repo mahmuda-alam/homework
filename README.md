@@ -13,7 +13,8 @@
   - [ToLowerCase](#tolowercase)
   - [ToUpperCase](#touppercase)
   - [Replace](#replace)
-  - [ReplaceAll](#replaceAll)
+  - [ReplaceAll](#replaceall)
+- [Prototype](#prototype)
     
  
 ### Number
@@ -186,4 +187,54 @@ let quote = "To be or not to be";
 quote = quote.replaceAll("be", "code");
 
 console.log(quote); // "To code or not to code"
+```
+
+- #### Prototype
+
+```js
+const electronicsDevice = {
+  id: "",
+  name: "",
+  type: "",
+  weight:"",
+  color: "",
+
+  __proto__: {
+    isVerified: false,
+        
+    addDeviceToStore(id, name, type, weight, color) {
+      this.id = id;
+      this.name = name;
+      this.type = type;
+      this.weight = weight;
+      this.color = color;
+
+      console.log('Device is added to the store.');
+    },
+
+    verifyDevice(id, type) {
+      if(id !== this.id || type !== this.type) return;
+
+      this.isVerified = true;
+    }
+  }
+}
+
+electronicsDevice.addDeviceToStore('1', 'iPhone 15', 'phone', '190gm', 'purple');
+electronicsDevice.verifyDevice('2', 'phone');
+
+if(electronicsDevice.isVerified) {
+  console.log('Your device is purchased from our store.');
+} else {
+  console.log('The device is not purchased from our store.');
+}
+
+electronicsDevice.addDeviceToStore('2', 'Macbook Pro', 'laptop', '1kg', 'silver');
+electronicsDevice.verifyDevice('2', 'laptop');
+
+if(electronicsDevice.isVerified) {
+  console.log('Your device is purchased from our store.');
+} else {
+  console.log('The device is not purchased from our store.');
+}
 ```
