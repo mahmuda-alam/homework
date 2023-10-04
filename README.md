@@ -15,7 +15,12 @@
   - [Replace](#replace)
   - [ReplaceAll](#replaceall)
 - [Prototype](#prototype)
-    
+- [Window](#window)
+  - [Console](#console)
+  - [Document](#document)
+  - [Location](#location)
+  - [Alert](#alert)
+  - [Open](#open)
  
 ### Number
 
@@ -189,7 +194,7 @@ quote = quote.replaceAll("be", "code");
 console.log(quote); // "To code or not to code"
 ```
 
-- #### Prototype
+### Prototype
 
 ```js
 const electronicsDevice = {
@@ -238,3 +243,80 @@ if(electronicsDevice.isVerified) {
   console.log('The device is not purchased from our store.');
 }
 ```
+
+### Window
+Every browser gives an object. It is called `window`. A browser window is represented by the `window` object. Through `window` object, we can access the browser’s methods and attributes as the global object in the browser environment. So this is not javascript thing. It is all about browser. But all global javascript objects, functions and variables automatically become members of the window object. To access those variables, functions or objects, you can call those with or without `window`. For example: 
+
+```js
+// The output of the below code is same. Cause you can call it with 'window.location' or only 'location'
+console.log(window.location); // It's also pointing to the location object of the window
+console.log(location); // It's also pointing to the location object of the window
+
+a = 5; // As this is global object, it will add to the window object automatically as a property.
+
+console.log(a); // output will be 5
+console.log(window.a); // output will be 5
+```
+
+There are lots of methods and attributes in the `window` object. Here are the list of some most useful methods and property used in development.
+
+- #### Console
+To log information we can use this methods of `window` object.
+```js
+console.log("Loggin information");
+console.error("Loggin error");
+console.info("Logging as info");
+```
+
+- #### Document
+To access HTML, it is used widely. For example:
+```js
+document.getElementById('root') // Returns the element that has the ID "root"
+```
+
+- #### Location
+The `location` refers the `Location` object, which has data about the current URL of that page. Such as:
+```js
+location.hostname(); // Output will be 'github.com'
+location.pathname(); // Output will be '/mahmuda-alam/homework'
+```
+
+- #### LocalStorage
+This is a useful methods of `window` Object. It is used to save data in the browser. But the storage capacity of the browser is low. Usecase:
+```js
+localStorage.setItem('key', 'value'); // Save this key-value pair in the browser which is located to the 'Application' tab of the browser
+localStorage.getItem('key'); // To Retrieve value from browser localStorage, it is used
+localStorage.removeItem('key'); // To remove an item from localStorage
+```
+
+- #### Alert
+To show alert, we can use this method. For example:
+```js
+alert('This is an alert message');
+```
+
+- #### Open
+This will open new window in the browser.
+```js
+open('https://github.com/mahmuda-alam/homework'); 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
