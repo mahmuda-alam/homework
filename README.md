@@ -277,8 +277,8 @@ document.getElementById('root') // Returns the element that has the ID "root"
 - #### Location
 The `location` refers the `Location` object, which has data about the current URL of that page. Such as:
 ```js
-location.hostname(); // Output will be 'github.com'
-location.pathname(); // Output will be '/mahmuda-alam/homework'
+location.hostname; // Output will be 'github.com'
+location.pathname; // Output will be '/mahmuda-alam/homework'
 ```
 
 - #### LocalStorage
