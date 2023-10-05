@@ -21,6 +21,8 @@
   - [Location](#location)
   - [Alert](#alert)
   - [Open](#open)
+- [Function](#function)
+  - [Function Expression](#function-expression)
  
 ### Number
 
@@ -300,6 +302,9 @@ This will open new window in the browser.
 ```js
 open('https://github.com/mahmuda-alam/homework'); 
 ```
+
+### Function
+
 
 
 
