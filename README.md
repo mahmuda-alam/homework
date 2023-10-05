@@ -342,6 +342,17 @@ function(a,b) {
 }
 ```
 
+- #### Immediately Invoked Function Expression
+The functions that are executed as soon as they are mounted are called `Immediately Invoked Function Expression(IIFE)`. It use the anonymous property of the function expression to execute its code. This is executed by wrapping the anonymous function in parentheses and ending it with the semicolon.
+
+Example:
+```js
+(function () {
+  console.log("Welcome to Javascript");
+})();
+```
+ 
+
   
 
 
