@@ -367,6 +367,14 @@ const person = new person();
 console.log(person.name);
 console.log(person.age);
 ```
+
+- #### Arrow Function
+Arrow function is used to shorten the code. Here we do not use `function` keyword and use the arrow symbol. It is generally a cleaner way of creating JavaScript functions and it is similar to the function expression.
+```js
+ add = (a, b) => a + b; 
+	
+console.log(add(3, 2)); 
+```
  
 
   
