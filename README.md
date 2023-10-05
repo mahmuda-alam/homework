@@ -24,7 +24,7 @@
 - [Function](#function)
   - [Function Expression](#function-expression)
   - [Anonymous Function](#anonymous-function)
-  - [Immediately Invoked Function Expression](#immediately-invoked-function-expression)
+  - [Immediately Invoked Function Expression(IIFE)](#immediately-invoked-function-expressioniife)
   - [Constructor Function](#constructor-function)
   - [Arrow Function](#arrow-function)
  
@@ -320,29 +320,31 @@ const value = myFunction(8, 2);
 console.log(value);
 ```
 
+There are different ways to decalre a function. Here are some examples: 
+
 - #### Function Expression
-Function expression is another way to define a function in JavaScript. Here we define a function using a variable and store the return value in avariable. 
+Function expression is another way to define a function in JavaScript. Here we define a function using a variable and store the return value in a variable. 
 
 Example:
 ```js
-const add = function(a,b) {
-   console.log(a+b);
+const add = function(a, b) {
+   console.log(a + b);
 }
 
-add(2,3);
+add(2, 3);
 ```
 
 - #### Anonymous Function
-Anonymous function declaration does not allow the function name. In the general function declaration syntex, the function name is attached in the function keyword but an anonymous function is declared only using the functioin keyword and a parenthesis.
+Anonymous function declaration does not allow the function name. In the general function declaration syntax, the function name is attached in the function keyword but an anonymous function is declared only using the function keyword and a parenthesis.
 
 Example:
 ```js
-function(a,b) {
-   console.log(a+b);
+function(a, b) {
+   console.log(a + b);
 }
 ```
 
-- #### Immediately Invoked Function Expression
+- #### Immediately Invoked Function Expression(IIFE)
 The functions that are executed as soon as they are mounted are called `Immediately Invoked Function Expression(IIFE)`. It use the anonymous property of the function expression to execute its code. This is executed by wrapping the anonymous function in parentheses and ending it with the semicolon.
 
 Example:
@@ -353,16 +355,16 @@ Example:
 ```
 
 - #### Constructor Function
-Constructor function create a function object which executes in the global scope. It can be used to create multiple object that are similar. The constructor function has similar functionalities as the function expression. It is called with the new `keyword` to create an object. Constructor function aslo can be used with the `this` keword.
+Constructor function create a function object which executes in the global scope. It can be used to create multiple object that are similar. The constructor function has similar functionalities as the function expression. It is called with the `new` keyword to create an object. Constructor function aslo can be used with the `this` keyword.
 
 Example:
 ```js
-function person() {
-   this.name = "Toma",
-   this,age = 29
+function Person() {
+   this.name = "John",
+   this.age = 20,
 }
 
-const person = new person();
+const person = new Person();
 
 console.log(person.name);
 console.log(person.age);
@@ -370,6 +372,7 @@ console.log(person.age);
 
 - #### Arrow Function
 Arrow function is used to shorten the code. Here we do not use `function` keyword and use the arrow symbol. It is generally a cleaner way of creating JavaScript functions and it is similar to the function expression.
+
 ```js
  add = (a, b) => a + b; 
 	
