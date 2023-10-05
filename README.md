@@ -23,7 +23,7 @@
   - [Open](#open)
 - [Function](#function)
   - [Function Expression](#function-expression)
-  - [Anonymous Functions](#anonymous-functions)
+  - [Anonymous Function](#anonymous-function)
   - [Immediately Invoked Function Expression](#immediately-invoked-function-expression)
   - [Constructor Function](#constructor-function)
   - [Arrow Function](#arrow-function)
@@ -310,7 +310,7 @@ open('https://github.com/mahmuda-alam/homework');
 ### Function
 Functions are one of the fundamental building block in javascript. A function is a set of statements that take input, do some specific computation and produce output. The idea is to put some commonly and repeatedly done tasks together make a function so that instead of writing the same code again and again for different inputs, we can call that function.
 
-A basic javascript function--
+A basic javascript function:
 ```js
 function myFunction(n1, n2) {
   return n1 / n2;
@@ -321,6 +321,28 @@ console.log(value);
 ```
 
 - #### Function Expression
+Function expression is another way to define a function in JavaScript. Here we define a function using a variable and store the return value in avariable. 
+
+Example:
+```js
+const add = function(a,b) {
+   console.log(a+b);
+}
+
+add(2,3);
+```
+
+- #### Anonymous Function
+Anonymous function declaration does not allow the function name. In the general function declaration syntex, the function name is attached in the function keyword but an anonymous function is declared only using the functioin keyword and a parenthesis.
+
+Example:
+```js
+function(a,b) {
+   console.log(a+b);
+}
+```
+
+  
 
 
 
