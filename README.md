@@ -351,6 +351,22 @@ Example:
   console.log("Welcome to Javascript");
 })();
 ```
+
+- #### Constructor Function
+Constructor function create a function object which executes in the global scope. It can be used to create multiple object that are similar. The constructor function has similar functionalities as the function expression. It is called with the new `keyword` to create an object. Constructor function aslo can be used with the `this` keword.
+
+Example:
+```js
+function person() {
+   this.name = "Toma",
+   this,age = 29
+}
+
+const person = new person();
+
+console.log(person.name);
+console.log(person.age);
+```
  
 
   
