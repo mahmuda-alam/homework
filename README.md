@@ -304,6 +304,15 @@ open('https://github.com/mahmuda-alam/homework');
 ```
 
 ### Function
+Functions are one of the fundamental building block in javascript. A function is a set of statements that take input, do some specific computation and produce output. The idea is to put some commonly and repeatedly done tasks together make a function so that instead of writing the same code again and again for different inputs, we can call that function.
+A basic javascript function--
+```js
+   function myFunction(n1,n2) {
+        return n1 / n2;
+}
+   const value = myFunction(8,2);
+   console.log(value);
+```
 
 
 
