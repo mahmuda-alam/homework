@@ -410,7 +410,7 @@ cars[1]= "Volvo";
 cars[2]= "BMW";
 ```
 
-- ### Array methods
+- ### Array Methods
 There are described some methods of `Array`: 
 
 - #### Array.at
@@ -430,8 +430,8 @@ value = arr.at(index)
 console.log(`The value of index ${index} is: ${value}`); // Output will be 8
 ```
 
-- #### Array.Concat
-  The `Concat` method of array is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+- #### Array.concat
+The `concat` method of array is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
 	Example:
 ```js
@@ -444,9 +444,9 @@ console.log(array3);
 ```
 
 - #### Array.every
-  The `Every` method of array tests every element that pass the test implemented by the provided function. It returns a `Boolean` value.
+The `every` method of array tests every element that pass the test implemented by the provided function. It returns a `Boolean` value.
 
-	Example:
+Example:
 ```js
 let greaterFive = (currentValue) => currentValue > 5 ;
 
@@ -473,7 +473,7 @@ console.log(result);
 ```
 
 - #### Array.find
-  The `Find` method of array  returns the value of the first element in an array that pass the test in a testing function.
+The `Find` method of array  returns the value of the first element in an array that pass the test in a testing function.
 
   Example:
   ```js
