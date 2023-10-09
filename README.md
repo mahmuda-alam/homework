@@ -35,7 +35,10 @@
 	  - [Arry.filter](#arrayfilter)
 	  - [Arra.find](#arrayfind)
 	  - [Aray.findIndex](#arrayfindindex)
-	  - [Array.frEach](#arrayforeach)
+	  - [Array.forEach](#arrayforeach)
+          - [Array.includes](#arrayincludes)
+          - [Array.indexOf](#arrayindexOf)
+     
  
  
 ### Number
@@ -500,6 +503,43 @@ console.log(element);
 // Output will be : 1
 // Output will be : 2
 // Output will be : 3
+```
+
+- #### Array.includes
+The `includes` method of array checks if an array includes the element that passes the condition, returning true or false as appropriate.
+
+Example:
+```js
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// Output will be : true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// Output will be: true
+
+console.log(pets.includes('at'));
+// Output will be : false
+```
+
+- #### Array.indexOf
+The `indexOf` method of array returns the index of the first occurrence of the specified element in the array, or -1 if it is not found.
+
+Example:
+```js
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Output will be : 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 2));
+// Output will be : 4
+
+console.log(beasts.indexOf('giraffe'));
+// Output will be : -1
 ```
 
 
