@@ -33,11 +33,14 @@
 	  - [Array.concat](#arrayconcat)
 	  - [Array.every](#arrayevery)
 	  - [Arry.filter](#arrayfilter)
-	  - [Arra.find](#arrayfind)
+	  - [Array.find](#arrayfind)
 	  - [Aray.findIndex](#arrayfindindex)
 	  - [Array.forEach](#arrayforeach)
-          - [Array.includes](#arrayincludes)
-          - [Array.indexOf](#arrayindexOf)
+    - [Array.includes](#arrayincludes)
+  	- [Array.indexOf](#arrayindexof)
+    - [Array.map](#arraymap)
+  	- [Array.sort](#arraysort)
+   	 
      
  
  
@@ -479,7 +482,7 @@ console.log(result);
   console.log(found); // Output will be 6
   ```
 
-  - #### Array.findIndex
+- #### Array.findIndex
 The `findIndex` method of array is used to return the first index of the element in a given array that satisfies the provided testing function. Otherwise, if no data is found then the value of -1 is returned.
 
 Example:
@@ -541,6 +544,21 @@ console.log(beasts.indexOf('bison', 2));
 console.log(beasts.indexOf('giraffe'));
 // Output will be : -1
 ```
+
+- #### Array.map
+The `map` method of array creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+Example:
+```js
+const arr [1, 2, 3, 4, 5, 6]
+const mapped = arr.map(element => element + 30);
+
+console.log(mapped);
+// Output will be : [31, 32, 33, 34, 35, 36]
+```
+
+- #### Array.sort
+
 
 
 
