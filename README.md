@@ -29,17 +29,18 @@
   - [Arrow Function](#arrow-function)
 - [Array](#array)
 	- [Array Methods](#array-methods)
-	  - [Array.at](#arrayat)
-	  - [Array.concat](#arrayconcat)
-	  - [Array.every](#arrayevery)
-	  - [Arry.filter](#arrayfilter)
-	  - [Array.find](#arrayfind)
-	  - [Aray.findIndex](#arrayfindindex)
-	  - [Array.forEach](#arrayforeach)
-    - [Array.includes](#arrayincludes)
-  	- [Array.indexOf](#arrayindexof)
-    - [Array.map](#arraymap)
-  	- [Array.sort](#arraysort)
+	  	- [Array.at](#arrayat)
+	  	- [Array.concat](#arrayconcat)
+	  	- [Array.every](#arrayevery)
+	  	- [Arry.filter](#arrayfilter)
+	  	- [Array.find](#arrayfind)
+	  	- [Aray.findIndex](#arrayfindindex)
+	  	- [Array.forEach](#arrayforeach)
+	  	- [Array.includes](#arrayincludes)
+   		- [Array.indexOf](#arrayindexof)
+     	- [Array.map](#arraymap)
+      	- [Array.push](#arraymap)
+      	- [Array.pop](#arraypop)
    	 
      
  
@@ -553,11 +554,40 @@ Example:
 const arr [1, 2, 3, 4, 5, 6]
 const mapped = arr.map(element => element + 30);
 
-console.log(mapped);
-// Output will be : [31, 32, 33, 34, 35, 36]
+console.log(mapped); // Output will be : [31, 32, 33, 34, 35, 36]
 ```
 
-- #### Array.sort
+- #### Array.push
+The `push` method of array adds the specified elements to the end of an array and returns the new length of the array.
+
+Example:
+```js
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count); // Output will be : 4
+
+console.log(animals); // Output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals); // Output will be : Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+```
+
+- #### Array.pop
+The `pop` method of Array removes the last element from an array and returns that element. This method changes the length of the array.
+
+Example:
+```js
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+console.log(plants.pop()); // Output will be : "tomato"
+
+console.log(plants); // Output will be : Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+plants.pop();
+
+console.log(plants); // Output will be : Array ["broccoli", "cauliflower", "cabbage"]
+```
 
 
 
