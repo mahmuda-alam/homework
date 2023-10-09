@@ -452,8 +452,8 @@ lessnine = (currentValue) => currentValue < 9 ;
 console.log = (array.every(lessnine)); // Output will be true
 ```
 
-- #### Array.filter
-  The `Filter` method of array creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+- #### Array.filter
+The `Filter` method of array creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 
 	Example:
 ```js
@@ -466,9 +466,43 @@ console.log(result);
 ```
 
 - #### Array.find
-  
-  
-  
+  The `Find` method of array  returns the value of the first element in an array that pass the test in a testing function.
+
+  Example:
+  ```js
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const found = arr.find(element => element > 5);
+
+  console.log(found); // Output will be 6
+  ```
+
+  - #### Array.findIndex
+The `findIndex` method of array is used to return the first index of the element in a given array that satisfies the provided testing function. Otherwise, if no data is found then the value of -1 is returned.
+
+Example:
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber)); // output will be 3
+```
+
+- #### Array.forEach
+The `forEach` method of array executes a provided function once for each array element.
+
+Example:
+```js
+const arr = [1, 2, 3]
+arr.forEach(element => {
+console.log(element);
+});
+// Output will be : 1
+// Output will be : 2
+// Output will be : 3
+```
+
+
 
   
 
