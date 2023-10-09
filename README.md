@@ -27,6 +27,16 @@
   - [Immediately Invoked Function Expression(IIFE)](#immediately-invoked-function-expressioniife)
   - [Constructor Function](#constructor-function)
   - [Arrow Function](#arrow-function)
+- [Array](#array)
+	- [Array Methods](#array-methods)
+	  - [Array.at](#arrayat)
+	  - [Array.concat](#arrayconcat)
+	  - [Array.every](#arrayevery)
+	  - [Arry.filter](#arrayfilter)
+	  - [Arra.find](#arrayfind)
+	  - [Aray.findIndex](#arrayfindindex)
+	  - [Array.frEach](#arrayforeach)
+ 
  
 ### Number
 
@@ -378,7 +388,87 @@ Arrow function is used to shorten the code. Here we do not use `function` keywor
 	
 console.log(add(3, 2)); 
 ```
- 
+
+
+# Array
+JavaScript Array is a single variable that is used to store elements of different data types. JavaScript arrays are zero-indexed.Arrays are used when we have a list of items. An array allows you to store several values with the same name and access them by using their index number.
+
+Example:
+ ```js
+const cars = ["Saab", "Volvo", "BMW"];
+
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+```
+
+- ### Array methods
+There are described some methods of `Array`: 
+
+- #### Array.at
+The `at` methods of array takes an integer value and returns the item of the index. It allows positive and negetive integer. Negative integers count back from the last item in the array.
+
+Example:
+```js
+const arr = [5, 12, 8, 130, 44];
+let index = 3;
+let value = arr.at(index);
+
+console.log(`The value of index ${index} is: ${value}`); // Output will be 130
+
+index = -3;
+value = arr.at(index)
+
+console.log(`The value of index ${index} is: ${value}`); // Output will be 8
+```
+
+- #### Array.Concat
+  The `Concat` method of array is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+
+	Example:
+```js
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+console.log(array3);
+// Output will be: Array ["a", "b", "c", "d", "e", "f"]
+```
+
+- #### Array.every
+  The `Every` method of array tests every element that pass the test implemented by the provided function. It returns a `Boolean` value.
+
+	Example:
+```js
+let greaterFive = (currentValue) => currentValue > 5 ;
+
+const array = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(array.every(greaterFive)); // Output will be false
+
+lessnine = (currentValue) => currentValue < 9 ;
+
+console.log = (array.every(lessnine)); // Output will be true
+```
+
+- #### Array.filter
+  The `Filter` method of array creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+
+	Example:
+```js
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
+// Output will be : Array ["exuberant", "destruction", "present"]
+```
+
+- #### Array.find
+  
+  
+  
 
   
 
