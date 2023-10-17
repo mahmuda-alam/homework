@@ -596,7 +596,7 @@ We come across for loop which provides a brief and systematic way of writing the
 
 ```js
 for(statement1; statement2; statement3) {
-code here....
+  // Code here....
 }
 ```
 1. Statement1: it is the initialization of the counter. It is executed once before the execution of the code block.
@@ -607,8 +607,7 @@ Examples:
 
 ```js
 for(let i = 2; i <= 4; i++) {
-
-    console.log('value of i ' + i);
+  console.log('value of i ' + i)
 }
 
 ```
@@ -617,31 +616,27 @@ for(let i = 2; i <= 4; i++) {
 const subjects = ["Maths", "Science", "English", "History"];
 
 for (let i = 0; i < subjects.length; i++) {
-    
-	console.log('My subject is ' + subjects[i]);
+  console.log('My subject is ' + subjects[i]);
 }
-
 ```
 
 ```js
 function isLeapear(year) {
-    if(year % 4 ===0 && year % 100 !== 0 || year % 400 === 0) {
-        return true
-    } else {
-        return false
-    }
+  if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+    return true
+  } else {
+    return false
+  }
 }
 
 const years = [1988, 1990, 1994, 1997, 2000, 2005, 2012, 2015, 2020,2023,]
 
 for(let i = 0; i < years.length; i++) {
-    let x = isLeapear(years[i])
-
-    if(x === true) {
-        console.log(years[i] + ' is a leapyear');
-    } else {
-        console.log(years[i] + ' is not a leapyear');
-    }
+  if(isLeapear(years[i]) === true) {
+    console.log(years[i] + ' is a leapyear');
+  } else {
+    console.log(years[i] + ' is not a leapyear');
+  }
 }
 ```
   
