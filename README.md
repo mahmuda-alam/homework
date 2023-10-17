@@ -41,6 +41,7 @@
      	- [Array.map](#arraymap)
       	- [Array.push](#arraymap)
       	- [Array.pop](#arraypop)
+- [For loop](#for-loop)      
    	 
      
  
@@ -589,9 +590,41 @@ plants.pop();
 console.log(plants); // Output will be : Array ["broccoli", "cauliflower", "cabbage"]
 ```
 
+# For loop
+Looping in programming languages is a feature that facilitates the execution of a set of instructions repeatedly until some condition evaluates and becomes false. Again, there are many types of loops, but here we will only look at the for loop. 
+We come across for loop which provides a brief and systematic way of writing the loop structure. Syntax:
 
+```js
+for(statement1; statement2; statement3) {
+code here....
+}
+```
+1. Statement1: it is the initialization of the counter. It is executed once before the execution of the code block.
+2. Statement2: It is the testing statement that defines the condition for executing the code block It must return a boolean value. It is also an entry-controlled loop as the condition is checked before the execution of the loop statements.
+3. Statement3: It is the increment or decrement of the counter & executed (every time) after the code block has been executed.
+   
+Example:
+```js
+function isLeapear(year) {
+    if(year % 4 ===0 && year % 100 !== 0 || year % 400 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
 
+const years = [1988, 1990, 1994, 1997, 2000, 2005, 2012, 2015, 2020,2023,]
 
+for(let i = 0; i < years.length; i++) {
+    let x = isLeapear(years[i])
+
+    if(x === true) {
+        console.log(years[i] + ' is a leapyear');
+    } else {
+        console.log(years[i] + ' is not a leapyear');
+    }
+}
+```
   
 
 
