@@ -603,7 +603,26 @@ code here....
 2. Statement2: It is the testing statement that defines the condition for executing the code block It must return a boolean value. It is also an entry-controlled loop as the condition is checked before the execution of the loop statements.
 3. Statement3: It is the increment or decrement of the counter & executed (every time) after the code block has been executed.
    
-Example:
+Examples:
+
+```js
+for(let i = 2; i <= 4; i++) {
+
+    console.log('value of i ' + i);
+}
+
+```
+
+```js
+const subjects = ["Maths", "Science", "English", "History"];
+
+for (let i = 0; i < subjects.length; i++) {
+    
+	console.log('My subject is ' + subjects[i]);
+}
+
+```
+
 ```js
 function isLeapear(year) {
     if(year % 4 ===0 && year % 100 !== 0 || year % 400 === 0) {
